@@ -28,7 +28,7 @@ class _HomePageState extends State<HomePage> {
           onDone: () {
             setState(() {
               done = false;
-              log(done.toString());
+           
             });
           }),
     );
@@ -51,7 +51,7 @@ class _HomePageState extends State<HomePage> {
             children: [
               Container(
                 width: size.width,
-                height: size.height * 4,
+                height: size.height * 5,
                 color: const Color(0xffBDCADA),
               ),
               Positioned(
@@ -334,6 +334,66 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
               ),
+              //
+               //
+                   Positioned(
+                  top: size.height * 2.9,
+                    left: size.width * 0.15,
+                  child: Image.asset('assets/x.png')),
+                  //
+                   //
+                   Positioned(
+                  top: size.height * 2.6,
+                    right: size.width * 0.25,
+                  child: Image.asset('assets/x.png')),
+                  //
+                  //
+                   Positioned(
+                  top: size.height * 3.2,
+                    left: size.width * 0.35,
+                  child: Image.asset('assets/x.png')),
+                  //
+                   //
+                   Positioned(
+                  top: size.height * 3,
+                    right: size.width * 0.24,
+                  child: Image.asset('assets/x.png')),
+                  //
+                     Positioned(
+                top: size.height * 3.4,
+                left: size.width * 0.12,
+                child: Text(
+                  'Attract',
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.w900,
+                      fontSize: size.height * 0.14),
+                ),
+              ),
+              Positioned(
+                top: size.height * 3.6,
+                left: size.width * 0.12,
+                child: Text(
+                  'Attract recruiters with your magnetic CV',
+                  style: TextStyle(
+                      color: const Color(0xff7240FF),
+                      fontWeight: FontWeight.w900,
+                      fontSize: size.height * 0.025),
+                ),
+              ),
+               //
+                Positioned(
+                  top: size.height * 3.7,
+                    right: size.width * 0.4,
+                    left:size.width * 0.4 ,
+                  child: Center(child: Image.asset('assets/monthly_btn.png'))),
+                  //
+                    Positioned(
+                  top: size.height * 3.85,
+                    right: size.width * 0.1,
+                    left:size.width * 0.1 ,
+                  child: Center(child: Image.asset('assets/deals.png',height: size.height*0.6,fit: BoxFit.fill,width: size.width*0.7))),
+                  //
             ],
           ),
         ],
